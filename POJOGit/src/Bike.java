@@ -3,6 +3,7 @@ public class Bike {
 	String brand;
 	String country;
 	int price;
+	String color;
 
 	Bike(){}
 
@@ -15,6 +16,11 @@ public class Bike {
 		this.brand = brand;
 		this.price = price;
 		this.country = country;
+	}
+	
+	Bike(String brand,int price,String country,String color){
+		this(brand,price,country);
+		this.color = color;
 	}
 
 	public String getBrand() {
@@ -37,5 +43,6 @@ public class Bike {
 		System.out.println("Brand Name:" + this.brand);
 		System.out.println("Price:" + this.price);
 		System.out.println("Country:" + this.country);
+		System.out.println("Color:" + this.color);
 	}
 }

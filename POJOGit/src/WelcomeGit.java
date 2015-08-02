@@ -9,5 +9,9 @@ public class WelcomeGit {
 		System.out.println("----------------------");
 		Bike bike2 = new Bike("Honda",5000,"Japan");
 		bike2.showInfo();
+		
+		System.out.println("----------------------");
+		Bike bike3 = new Bike("Honda",5000,"Japan","Red");
+		bike3.showInfo();
 	}
 }
